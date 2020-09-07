@@ -4,7 +4,11 @@ const app = express();
 
 // Routes
 
+// Login Page
 app.use('/', require('./routes/index'));
+
+// Register Page
+app.use('/users', require('./routes/users'));
 
 const PORT = process.env.PORT || 5000;
 
